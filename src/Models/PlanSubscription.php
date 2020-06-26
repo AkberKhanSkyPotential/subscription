@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Models;
+namespace Akberkhanskypotential\Subscriptions\Models;
 
 use DB;
 use Carbon\Carbon;
@@ -11,10 +11,10 @@ use Spatie\Sluggable\SlugOptions;
 use Rinvex\Support\Traits\HasSlug;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Rinvex\Subscriptions\Services\Period;
+use Akberkhanskypotential\Subscriptions\Services\Period;
 use Rinvex\Support\Traits\HasTranslations;
 use Rinvex\Support\Traits\ValidatingTrait;
-use Rinvex\Subscriptions\Traits\BelongsToPlan;
+use Akberkhanskypotential\Subscriptions\Traits\BelongsToPlan;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 

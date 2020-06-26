@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Models;
+namespace Akberkhanskypotential\Subscriptions\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;

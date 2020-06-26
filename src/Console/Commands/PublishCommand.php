@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Console\Commands;
+namespace Akberkhanskypotential\Subscriptions\Console\Commands;
 
 use Illuminate\Console\Command;
 

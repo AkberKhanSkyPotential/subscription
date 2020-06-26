@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Console\Commands;
+namespace Akberkhanskypotential\Subscriptions\Console\Commands;
 
 use Illuminate\Console\Command;
 
@@ -32,8 +32,8 @@ class RollbackCommand extends Command
         $this->alert($this->description);
 
         $path = config('rinvex.subscriptions.autoload_migrations') ?
-            'vendor/rinvex/laravel-subscriptions/database/migrations' :
-            'database/migrations/rinvex/laravel-subscriptions';
+            'vendor/akberkhanskypotential/subscriptions/database/migrations' :
+            'database/migrations/akberkhanskypotential/subscriptions';
 
         if (file_exists($path)) {
             $this->call('migrate:reset', [

@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Providers;
+namespace Akberkhanskypotential\Subscriptions\Providers;
 
-use Rinvex\Subscriptions\Models\Plan;
+use Akberkhanskypotential\Subscriptions\Models\Plan;
 use Illuminate\Support\ServiceProvider;
 use Rinvex\Support\Traits\ConsoleTools;
-use Rinvex\Subscriptions\Models\PlanFeature;
-use Rinvex\Subscriptions\Models\PlanSubscription;
-use Rinvex\Subscriptions\Models\PlanSubscriptionUsage;
-use Rinvex\Subscriptions\Console\Commands\MigrateCommand;
-use Rinvex\Subscriptions\Console\Commands\PublishCommand;
-use Rinvex\Subscriptions\Console\Commands\RollbackCommand;
+use Akberkhanskypotential\Subscriptions\Models\PlanFeature;
+use Akberkhanskypotential\Subscriptions\Models\PlanSubscription;
+use Akberkhanskypotential\Subscriptions\Models\PlanSubscriptionUsage;
+use Akberkhanskypotential\Subscriptions\Console\Commands\MigrateCommand;
+use Akberkhanskypotential\Subscriptions\Console\Commands\PublishCommand;
+use Akberkhanskypotential\Subscriptions\Console\Commands\RollbackCommand;
 
 class SubscriptionsServiceProvider extends ServiceProvider
 {
@@ -63,8 +63,8 @@ class SubscriptionsServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Publish Resources
-        $this->publishesConfig('rinvex/laravel-subscriptions');
-        $this->publishesMigrations('rinvex/laravel-subscriptions');
-        ! $this->autoloadMigrations('rinvex/laravel-subscriptions') || $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+        $this->publishesConfig('akberkhanskypotential/subscriptions');
+        $this->publishesMigrations('akberkhanskypotential/subscriptions');
+        ! $this->autoloadMigrations('akberkhanskypotential/subscriptions') || $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 }

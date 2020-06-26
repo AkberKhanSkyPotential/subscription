@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Models;
+namespace Akberkhanskypotential\Subscriptions\Models;
 
 use Spatie\Sluggable\SlugOptions;
 use Rinvex\Support\Traits\HasSlug;

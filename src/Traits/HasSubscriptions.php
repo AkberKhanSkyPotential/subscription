@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Traits;
+namespace Akberkhanskypotential\Subscriptions\Traits;
 
-use Rinvex\Subscriptions\Models\Plan;
-use Rinvex\Subscriptions\Services\Period;
+use Akberkhanskypotential\Subscriptions\Models\Plan;
+use Akberkhanskypotential\Subscriptions\Services\Period;
 use Illuminate\Database\Eloquent\Collection;
-use Rinvex\Subscriptions\Models\PlanSubscription;
+use Akberkhanskypotential\Subscriptions\Models\PlanSubscription;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasSubscriptions
