@@ -1,0 +1,85 @@
+{
+    "name": "akberkhanskypotential/subscription",
+    "description": "Akberkhanskypotential Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
+    "type": "library",
+    "keywords": [
+        "plan",
+        "value",
+        "laravel",
+        "feature",
+        "database",
+        "recurring",
+        "subscription"
+    ],
+    "license": "MIT",
+    "homepage": "https://www.skypotential.com/",
+    "support": {
+        "email": "akber.skypotential@gmail.com",
+        "issues": "https://github.com/akberkhanskypotential/subscription/issues",
+        "source": "https://github.com/akberkhanskypotential/subscription",
+        "docs": "https://github.com/akberkhanskypotential/subscription/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Skypotential",
+            "homepage": "https://www.skypotential.com/",
+            "email": "support@skypotential.com"
+        },
+        {
+            "name": "Akber Khan",
+            "homepage": "https://www.skypotential.com/",
+            "email": "akber.skypotential@gmail.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/akberkhanskypotential/subscription/contributors"
+        }
+    ],
+   
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/console": "^7.0.0",
+        "illuminate/database": "^7.0.0",
+        "illuminate/support": "^7.0.0",
+        "rinvex/laravel-support": "^4.0.0",
+        "spatie/eloquent-sortable": "^3.7.0",
+        "spatie/laravel-sluggable": "^2.2.0",
+        "spatie/laravel-translatable": "^4.2.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.27.0",
+        "illuminate/container": "^7.0.0",
+        "phpunit/phpunit": "^9.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Akberkhanskypotential\\Subscription\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akberkhanskypotential\\Subscriptions\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akberkhanskypotential\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
