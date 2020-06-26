@@ -1,5 +1,5 @@
 {
-    "name": "akberkhanskypotential/subscription",
+    "name": "akberkhanskypotential/subscriptions",
     "description": "Akberkhanskypotential Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
     "type": "library",
     "keywords": [
@@ -15,9 +15,9 @@
     "homepage": "https://www.skypotential.com/",
     "support": {
         "email": "akber.skypotential@gmail.com",
-        "issues": "https://github.com/akberkhanskypotential/subscription/issues",
-        "source": "https://github.com/akberkhanskypotential/subscription",
-        "docs": "https://github.com/akberkhanskypotential/subscription/blob/master/README.md"
+        "issues": "https://github.com/akberkhanskypotential/subscriptions/issues",
+        "source": "https://github.com/akberkhanskypotential/subscriptions",
+        "docs": "https://github.com/akberkhanskypotential/subscriptions/blob/master/README.md"
     },
     "authors": [
         {
@@ -33,7 +33,7 @@
         },
         {
             "name": "The Generous Laravel Community",
-            "homepage": "https://github.com/akberkhanskypotential/subscription/contributors"
+            "homepage": "https://github.com/akberkhanskypotential/subscriptions/contributors"
         }
     ],
    
@@ -57,7 +57,7 @@
             "database"
         ],
         "psr-4": {
-            "Akberkhanskypotential\\Subscription\\": "src/"
+            "Akberkhanskypotential\\Subscriptions\\": "src/"
         }
     },
     "autoload-dev": {
