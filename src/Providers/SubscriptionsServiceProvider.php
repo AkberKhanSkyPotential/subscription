@@ -6,7 +6,7 @@ namespace Akberkhanskypotential\Subscriptions\Providers;
 
 use Akberkhanskypotential\Subscriptions\Models\Plan;
 use Illuminate\Support\ServiceProvider;
-use Rinvex\Support\Traits\ConsoleTools;
+use Akberkhanskypotential\Support\Traits\ConsoleTools;
 use Akberkhanskypotential\Subscriptions\Models\PlanFeature;
 use Akberkhanskypotential\Subscriptions\Models\PlanSubscription;
 use Akberkhanskypotential\Subscriptions\Models\PlanSubscriptionUsage;
