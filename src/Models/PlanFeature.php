@@ -6,14 +6,14 @@ namespace Akberkhanskypotential\Subscriptions\Models;
 
 use Carbon\Carbon;
 use Spatie\Sluggable\SlugOptions;
-use Rinvex\Support\Traits\HasSlug;
+use Akberkhanskypotential\Support\Traits\HasSlug;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
-use Rinvex\Subscriptions\Services\Period;
-use Rinvex\Support\Traits\HasTranslations;
-use Rinvex\Support\Traits\ValidatingTrait;
+use Akberkhanskypotential\Subscriptions\Services\Period;
+use Akberkhanskypotential\Support\Traits\HasTranslations;
+use Akberkhanskypotential\Support\Traits\ValidatingTrait;
 use Spatie\EloquentSortable\SortableTrait;
-use Rinvex\Subscriptions\Traits\BelongsToPlan;
+use Akberkhanskypotential\Subscriptions\Traits\BelongsToPlan;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**

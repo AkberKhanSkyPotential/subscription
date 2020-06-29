@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Akberkhanskypotential\Subscriptions\Models;
 
 use Spatie\Sluggable\SlugOptions;
-use Rinvex\Support\Traits\HasSlug;
+use Akberkhanskypotential\Support\Traits\HasSlug;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
-use Rinvex\Support\Traits\HasTranslations;
-use Rinvex\Support\Traits\ValidatingTrait;
+use Akberkhanskypotential\Support\Traits\HasTranslations;
+use Akberkhanskypotential\Support\Traits\ValidatingTrait;
 use Spatie\EloquentSortable\SortableTrait;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
