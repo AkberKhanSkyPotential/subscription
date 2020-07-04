@@ -122,6 +122,20 @@ class PlanSubscriptionUsage extends Model
     }
 
     /**
+     * Scope subscription usage by feature slug.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $builder
+     * @param string                                $featureSlug
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeByFeatureSlug(Builder $builder, $featureSlug)
+    {
+        $feature = PlanFeature::where('slug', $featureSlug)->first();
+        return $builder->where('feature_id', $feature->getKey() ?? null);
+    }
+
+    /**
      * Scope subscription usage by feature name.
      *
      * @param \Illuminate\Database\Eloquent\Builder $builder
